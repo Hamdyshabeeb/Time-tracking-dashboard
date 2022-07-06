@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+
+		<title>Frontend Mentor | Time tracking dashboard</title>
+	</head>
+	<body>
+		<main>
+			<article class="dashbord">
+				<header class="dashboard-header">
+					<div class="dashboard-user">
+						<div class="dashboard-user-picture">
+							<img src="images/image-jeremy.png" alt="jeremy" />
+						</div>
+						<h1><span>Reported for</span> Jeremy Roborson</h1>
+					</div>
+
+					<nav class="dashboard-navigation">
+						<ul>
+							<li><button data-period="daily">Daily</button></li>
+							<li><button data-period="weekly">Weekly</button></li>
+							<li><button data-period="Monthly">Monthly</button></li>
+						</ul>
+					</nav>
+				</header>
+
+				<section class="dashboard-info">
+					<div>
+						<header>
+							<h2>Work</h2>
+							<button class="more">
+								<img src="images/icon-ellipsis.svg" alt="more" />
+							</button>
+						</header>
+						<div>
+							<p class="current-info">32hrs</p>
+							<p class="old-info">Last Week - 36hrs</p>
+						</div>
+					</div>
+				</section>
+				<section class="dashboard-info">
+					<div>
+						<header>
+							<h2>Play</h2>
+							<button class="more">
+								<img src="images/icon-ellipsis.svg" alt="more" />
+							</button>
+						</header>
+						<div>
+							<p class="current-info">10hrs</p>
+							<p class="old-info">Last Week - 8hrs</p>
+						</div>
+					</div>
+				</section>
+				<section class="dashboard-info">
+					<div>
+						<header>
+							<h2>Study</h2>
+							<button class="more">
+								<img src="images/icon-ellipsis.svg" alt="more" />
+							</button>
+						</header>
+						<div>
+							<p class="current-info">4hrs</p>
+							<p class="old-info">Last Week - 7hrs</p>
+						</div>
+					</div>
+				</section>
+				<section class="dashboard-info">
+					<div>
+						<header>
+							<h2>Exercise</h2>
+							<button class="more">
+								<img src="images/icon-ellipsis.svg" alt="more" />
+							</button>
+						</header>
+						<div>
+							<p class="current-info">4hrs</p>
+							<p class="old-info">Last Week - 5hrs</p>
+						</div>
+					</div>
+				</section>
+				<section class="dashboard-info">
+					<div>
+						<header>
+							<h2>Social</h2>
+							<button class="more">
+								<img src="images/icon-ellipsis.svg" alt="more" />
+							</button>
+						</header>
+						<div>
+							<p class="current-info">5hrs</p>
+							<p class="old-info">Last Week - 10hrs</p>
+						</div>
+					</div>
+				</section>
+				<section class="dashboard-info">
+					<div>
+						<header>
+							<h2>Self care</h2>
+							<button class="more">
+								<img src="images/icon-ellipsis.svg" alt="more" />
+							</button>
+						</header>
+					</div>
+					<div>
+						<p class="current-info">2hrs</p>
+						<p class="old-info">Last Week - 2hrs</p>
+					</div>
+				</section>
+			</article>
+		</main>
+	</body>
+</html>

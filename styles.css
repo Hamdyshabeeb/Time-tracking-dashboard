@@ -245,7 +245,7 @@ main {
 
 @media (min-width: 50em) {
 	.dashboard {
-		grid-template-columns: min(21rem) repeat(auto-fit, minmax(21rem, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
 		gap: 2.5rem;
 	}
 

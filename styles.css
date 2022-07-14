@@ -1,0 +1,203 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+button {
+	background: transparent;
+	border: 0;
+	font-size: inherit;
+	color: inherit;
+}
+
+ul {
+	padding: 0;
+	list-style: none;
+}
+:root {
+	/* font smoothing for macosx */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	/* setting font size to be 10px = 1rem */
+	font-size: 62.5%;
+	/* custom properties  */
+	--work-bg: 15, 100%, 70%; /* soft Orange*/
+	--play-bg: 195, 74%, 62%; /* Soft blue */
+	--study-bg: 348, 100%, 68%; /* Light red */
+	--exercise-bg: 145, 58%, 55%; /* Lime green */
+	--social-bg: 264, 64%, 52%; /* Violet */
+	--self-care-bg: 43, 84%, 65%; /* yellow */
+
+	--primary-color: 246, 80%, 60%; /* blue */
+
+	--very-dark: 226, 43%, 10%;
+	--dark: 235, 46%, 20%;
+	--desaturated: 235, 45%, 61%;
+	--pale: 236, 100%, 87%;
+
+	--white: hsl(0, 0%, 100%);
+}
+
+body {
+	font-family: 'Rubik', sans-serif;
+	font-size: 1.8rem;
+	display: grid;
+	place-items: center;
+	background-color: hsl(var(--very-dark));
+	color: hsl(0, 0%, 100%);
+}
+
+main {
+	max-width: 110rem;
+	width: 85%;
+	padding: 4rem 0;
+}
+
+/* layout */
+
+.dashboard {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 2.5rem;
+}
+
+.dashboard-user,
+.dashboard-navigation ul {
+	display: flex;
+	align-items: center;
+}
+
+.dashboard-navigation ul {
+	justify-content: space-between;
+}
+.dashboard-info div > * {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.dashboard-info .more {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	padding: 1rem 0;
+}
+/* spacing shape */
+
+.dashboard-header,
+.dashboard-info {
+	border-radius: 2.2rem;
+	max-width: 50rem;
+}
+
+.dashboard-header {
+	background-color: hsl(var(--dark));
+}
+
+.dashboard-user-picture {
+	width: 7rem;
+	height: 7rem;
+	border: 2px solid var(--white);
+	border-radius: 50%;
+	margin-right: 1.5rem;
+}
+.dashboard-info header {
+	margin-bottom: 1rem;
+}
+
+.dashboard-user {
+	padding: 3rem 2.5rem;
+}
+
+.dashboard-navigation {
+	padding: 1.5rem 2.5rem;
+}
+.dashboard-user {
+	background-color: hsl(var(--primary-color));
+	border-radius: 1.8rem;
+}
+
+.dashboard-info > div {
+	margin-top: 4rem;
+	padding: 3rem 2.5rem;
+	background-color: hsl(var(--dark));
+	border-radius: 1.8rem;
+}
+
+.dashboard-info:first-of-type {
+	background: hsl(var(--work-bg)) url(images/icon-work.svg) no-repeat 93% -4%;
+}
+
+.dashboard-info:nth-of-type(2) {
+	background: hsl(var(--play-bg)) url(images/icon-play.svg) no-repeat 93% -4%;
+}
+
+.dashboard-info:nth-of-type(3) {
+	background: hsl(var(--study-bg)) url(images/icon-study.svg) no-repeat 93% -4%;
+}
+
+.dashboard-info:nth-of-type(4) {
+	background: hsl(var(--exercise-bg)) url(images/icon-exercise.svg) no-repeat
+		93% -1%;
+}
+
+.dashboard-info:nth-of-type(5) {
+	background: hsl(var(--social-bg)) url(images/icon-social.svg) no-repeat 93% -4%;
+}
+
+.dashboard-info:nth-of-type(6) {
+	background: hsl(var(--self-care-bg)) url(images/icon-self-care.svg) no-repeat
+		93% -4%;
+}
+
+/* typography & colors  */
+
+.dashboard-header h1 {
+	font-weight: 400;
+	font-size: 2.1rem;
+}
+
+.dashboard-header h1 span {
+	display: block;
+	font-size: 0.5em;
+	margin-bottom: 0.3rem;
+	color: hsl(var(--pale));
+}
+
+.dashboard-navigation button {
+	color: hsl(var(--pale));
+	cursor: pointer;
+	padding: 1rem 0;
+}
+
+.dashboard-navigation button.active {
+	color: hsl(var(--white));
+}
+
+.dashboard-navigation button:hover {
+	color: hsl(var(--white));
+}
+.dashboard-info h2 {
+	font-size: 2rem;
+	font-weight: 500;
+}
+
+.dashboard-info .current-info {
+	font-size: 3.5rem;
+	font-weight: 300;
+}
+
+.dashboard-info .old-info {
+	font-size: 1.5rem;
+	font-weight: 300;
+	color: hsl(var(--pale));
+}
